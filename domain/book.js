@@ -52,10 +52,10 @@ class Book {
 
   setPages(pages) {
     if (typeof (pages) !== 'number' || isNaN(pages)) {
-      throw new Error()
+      throw new Error();
     }
     if (pages < 1) {
-      throw new Error()
+      throw new Error();
     }
     pages = Math.trunc(pages);
     this.#pages = pages;
@@ -64,16 +64,16 @@ class Book {
   setWords(words) {
     if(words !== undefined || words !== null) {
       if (typeof (words) !== 'number' || isNaN(words)) {
-        throw new Error()
+        throw new Error();
       }
       if (words < 1) {
-        throw new Error()
+        throw new Error();
       }
-      pages = Math.trunc(pages);
-      this.#pages = pages;
+      words = Math.trunc(words);
+      this.#words = words;
     }else{
-      pages = Math.trunc(pages);
-      this.#pages = pages;
+      words = Math.trunc(words);
+      this.#words = words;
     }
   
   }
