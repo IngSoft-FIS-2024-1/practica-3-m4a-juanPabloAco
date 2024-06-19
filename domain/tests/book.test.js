@@ -42,5 +42,7 @@ describe('Book', () => {
   it('toString()', () => {
     // TODO
   });
-
+//npm install
+//npm run lint
+//npm run test
 });
